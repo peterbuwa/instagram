@@ -15,6 +15,13 @@ let none = document.querySelector(".none");
 let homeContentWrapper = document.querySelector(".home-content-wrapper");
 let homeWrapper = document.querySelector(".home-wrapper");
 let searchInput = document.querySelector("#search");
+let love = document.querySelector(".search i");
+let conThirteen = document.querySelector(".container-thirteen-wrapper");
+let conEight = document.querySelector(".container-eight");
+let show = document.querySelector(".show");
+let conSix = document.querySelector(".container-six");
+let exploreArrowContainer = document.querySelector(".explore-arrow-container");
+
 
 
 
@@ -59,105 +66,115 @@ window.screen.addEventListener("click", function(){
 
 const images_one = [
     {photo: "images/cake-1.jpeg",
-    id: 1,
+    id: 0,
     caption: "cake",
      name: "james",
      likes: "473 likes",
      comment: "the best day for courtney's hen party",
      totalcomment: "view 1 comment",
-     date:"23 hours ago"},
+     date:"23 hours ago",
+     follow:"follow dele modesty, mercy and other you know to see their photos and videos"},
 
     {photo: "images/cake-2.jpeg",
+    id: 1,
+    caption: "cake",
+    name: "james",
+    likes: "473 likes",
+    comment: "the best day for courtney's hen party",
+    totalcomment: "view 1 comment",
+    date:"23 hours ago",
+    follow:"follow dele modesty, mercy and other you know to see their photos and videos"},
+
+    {photo: "images/cake-3.jpeg",
     id: 2,
     caption: "cake",
     name: "james",
     likes: "473 likes",
     comment: "the best day for courtney's hen party",
     totalcomment: "view 1 comment",
-    date:"23 hours ago"},
-
-    {photo: "images/cake-3.jpeg",
-    id: 3,
-    caption: "cake",
-    name: "james",
-    likes: "473 likes",
-    comment: "the best day for courtney's hen party",
-    totalcomment: "view 1 comment",
-    date:"23 hours ago"
+    date:"23 hours ago",
+    follow:"follow dele modesty, mercy and other you know to see their photos and videos"
     },
 
     {photo: "images/cupcake-1.jpeg",
     name: "james",
-    id: 4,
+    id: 3,
     caption: "cupcake",
      likes: "473 likes",
      comment: "the best day for courtney's hen party",
      totalcomment: "view 1 comment",
-     date:"23 hours ago"
+     date:"23 hours ago",
+     follow:"follow dele modesty, mercy and other you know to see their photos and videos"
     },
 
     {photo: "images/cupcake-2.jpeg",
+    id: 4,
+    caption: "cupcake",
+    name: "james",
+     likes: "473 likes",
+     comment: "the best day for courtney's hen party",
+     totalcomment: "view 1 comment",
+     date:"23 hours ago",
+     follow:"follow dele modesty, mercy and other you know to see their photos and videos"
+    },
+
+    {photo: "images/cupcake-3.jpeg",
     id: 5,
     caption: "cupcake",
     name: "james",
      likes: "473 likes",
      comment: "the best day for courtney's hen party",
      totalcomment: "view 1 comment",
-     date:"23 hours ago"
-    },
-
-    {photo: "images/cupcake-3.jpeg",
-    id: 6,
-    caption: "cupcake",
-    name: "james",
-     likes: "473 likes",
-     comment: "the best day for courtney's hen party",
-     totalcomment: "view 1 comment",
-     date:"23 hours ago"
+     date:"23 hours ago",
+     follow:"follow dele modesty, mercy and other you know to see their photos and videos"
     },
 
     {photo: "images/doughnut-1.jpeg",
-    id: 7,
+    id: 6,
     caption: "doughnut",
     name: "james",
      likes: "473 likes",
      comment: "the best day for courtney's hen party",
      totalcomment: "view 1 comment",
-     date:"23 hours ago"
+     date:"23 hours ago",
+     follow:"follow dele modesty, mercy and other you know to see their photos and videos"
     },
 
     {photo: "images/doughnut-2.jpeg",
+    id: 7,
+    caption: "doughtnut",
+    name: "james",
+     likes: "473 likes",
+     comment: "the best day for courtney's hen party",
+     totalcomment: "view 1 comment",
+     date:"23 hours ago",
+     follow:"follow dele modesty, mercy and other you know to see their photos and videos"
+    },
+
+    {photo: "images/doughnut-3.jpeg",
     id: 8,
     caption: "doughtnut",
     name: "james",
      likes: "473 likes",
      comment: "the best day for courtney's hen party",
      totalcomment: "view 1 comment",
-     date:"23 hours ago"
+     date:"23 hours ago",
+     follow:"follow dele modesty, mercy and other you know to see their photos and videos"
     },
 
-    {photo: "images/doughnut-3.jpeg",
+    {photo: "images/headerBcg.jpeg",
     id: 9,
     caption: "doughtnut",
     name: "james",
      likes: "473 likes",
      comment: "the best day for courtney's hen party",
      totalcomment: "view 1 comment",
-     date:"23 hours ago"
-    },
-
-    {photo: "images/headerBcg.jpeg",
-    id: 10,
-    caption: "doughtnut",
-    name: "james",
-     likes: "473 likes",
-     comment: "the best day for courtney's hen party",
-     totalcomment: "view 1 comment",
-     date:"23 hours ago"
+     date:"23 hours ago",
+     follow:"follow dele modesty, mercy and other you know to see their photos and videos"
     },
 
     {photo: "images/sweets-1.jpeg",
-    id: 11,
+    id: 10,
     caption: "sweets",
      name: "james",
      likes: "473 likes",
@@ -167,7 +184,7 @@ const images_one = [
     },
 
     {photo: "images/sweets-2.jpeg",
-    id: 12,
+    id: 11,
     caption: "sweets",
     name: "james",
      likes: "473 likes",
@@ -177,7 +194,7 @@ const images_one = [
     },
 
     {photo: "images/sweets-3.jpeg",
-    id: 13,
+    id: 12,
     caption: "sweets",
      name: "james",
      likes: "473 likes",
@@ -187,7 +204,7 @@ const images_one = [
     },
 
     {photo: "images/z-cake-2.jpeg",
-    id: 14,
+    id: 13,
     caption: "cake",
     name: "james",
      likes: "473 likes",
@@ -197,7 +214,7 @@ const images_one = [
     },
 
     {photo: "images/z-sweets-3.jpeg",
-    id: 1,
+    id: 14,
     caption: "sweets",
     name: "james",
     likes: "473 likes",
@@ -225,30 +242,72 @@ search.addEventListener("click", function(){
 
 let photoss = images_one.map(function(p){
     return `
-            <div class="container-seven-wrapper">
-                <img class="container-seven-image-one" src=${p.photo} />
+            <div class="img-class"  >
+                <img class="container-seven-image-one" src=${p.photo} id="${p.id}" />
             </div>
     `
 })
 
-conSeven.innerHTML = `${photoss.join(" ")}`
+conSeven.innerHTML = `${photoss.join(" ")}`;
+
+// modal
+
+const arrayImg = [...document.querySelectorAll(".img-class")];
 
 
-let photosOne = images_one.map(function(p){
-    return `
-            <div class="container-seven-wrapper">
-                <img class="container-seven-image-one" src=${p.photo} />
-            </div>
-    `
-})
+for(i = 0; i < images_one.length; i++){
+    arrayImg[i].addEventListener("click", (e)=>{
+        console.log(e.target);
+        let id = e.target.id;
+        
+        let  postPicsId  = 
+        `<div class="none-container">
+                <div class="arrow-container">
+            
+                    <div class="explore-profile-container">
+                        <div class="explore-profile-content">
+                            <div class="explore-profile-pics">
+                                <img src="${images_one[id].photo}" />
+                            </div>
+                            <div class="explore-name">
+                                <p>${images_one[id].name}</p>
+                                <p>.follow</p>
+                            </div>
+                            <div class="explore-ellipsis">
+                                <i class="fa fa-ellipsis-v "></i>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="explore-image-container">
+                        <div class="explore-image-wrapper">
+                            <img src=${images_one[id].photo} />
+                        </div>
+                   </div>
+                </div>
+         </div>
+        ` ;
+        show.innerHTML = postPicsId;
+        exploreArrowContainer.style.display = "block";
+        conSeven.style.display = "none";
+        conSix.style.display = "none";
+        conEight.style.display = "none";
+    })
+    
+}
 
-conSeven.innerHTML = `${photosOne.join(" ")}`
 
+function goBack(){
+    exploreArrowContainer.style.display = "none";
+    conSeven.style.display = "flex";
+    conSix.style.display = "flex";
+    conEight.style.display = "flex";
+    // show.style.display = "none";
+}
 
 
 let photos_one = images_one.map(function(p){
     return `
-            <div class="container-nine-wrapper">
+    <div class="container-nine-wrapper images_one" >
                 <img class="container-nine-image-one" src=${p.photo} />
             </div>
     `
@@ -264,6 +323,7 @@ plusIcon.addEventListener("click", function(){
 let photo_two = images_one.map(function(p){
     return`
             <div class="container-twelve">
+                
                 <div class="container-twelve-content-one">
                     <div class="container-twelve-image">
                         <img src= ${p.photo} width="40" height="40" /> 
@@ -344,9 +404,10 @@ searchInput.addEventListener("keyup", function(e){
     })
 
     let showItem = filterItems.map(function(b){
+        console.log(b);
         return `
-        <div class="name" id= "${b.id}">
-             <img src="${b.photo}" class="post-image" />              
+        <div class="name" class="img-class" >
+             <img src="${b.photo}" id="${b.id}" class="post-image" />              
         </div>
         `
     })
@@ -357,6 +418,70 @@ searchInput.addEventListener("keyup", function(e){
 })
 
 
+// const arrayImg = [...document.querySelectorAll(".img-class")];
+
+
+// for(i = 0; i < images_one.length; i++){
+//     arrayImg[i].addEventListener("click", (e)=>{
+//         console.log(e.target);
+//         let id = e.target.id;
+        
+//         let  postPicsId  = 
+//         `<div class="none-container">
+//                 <div>
+//                     yes i got it
+//                 </div>
+//                 <div class="arrow-container">
+//                     <i class="fa fa-arrow-left"></i>
+//                     <img src=${images_one[id].photo} />
+//                 </div>
+//          </div>
+//         ` ;
+//         show.innerHTML = postPicsId;
+//     })
+    
+//     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let heartDisplay = images_one.map(function(p){
+//     return`
+//             <div class="container-thirteen">
+//                 <div class="con-thirteen-image">
+//                     <img src="${p.photo}" width="50" height="50" />
+//                 </div>
+//             </div>
+//     `
+// })
 
 
 
